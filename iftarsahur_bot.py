@@ -15,10 +15,10 @@ from unidecode import unidecode
 
 load_dotenv('config.env')
 
-BOT_TOKEN: str = environ.get('BOT_TOKEN', None)
-API_ID: int = int(environ.get('API_ID', None))
-API_HASH: str = environ.get('API_HASH', None)
-BOT_USERNAME: str = environ.get('BOT_USERNAME', None)
+BOT_TOKEN: str = environ.get('BOT_TOKEN',"6629527459:AAHds3XkfjW-FE9wsfOSsGPbbtdN-iLrlv8")
+API_ID: int = int(environ.get('API_ID',"23272158"))
+API_HASH: str = environ.get('API_HASH',"9c6b7311bf4b00c649674db048c52cbf")
+BOT_USERNAME: str = environ.get('BOT_USERNAME',"Galeriboy103949_bot")
 SUDO: list = list(map(int, environ.get('SUDO', '0').split(' ')))
 
 PREFIX: list = ["/", "!", ".", "-", ">"]
